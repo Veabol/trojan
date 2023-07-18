@@ -1,6 +1,11 @@
 # trojan
 VPS搭建Trojan
 
+bash <(curl -sL https://raw.githubusercontent.com/Veabol/trojan/main/install_trojan_mod.sh)
+
+bash <(curl -sL https://raw.githubusercontent.com/Veabol/trojan/main/wordpress_trojan.sh)
+
+原版：
 bash <(curl -sL https://raw.githubusercontent.com/daveleung/hijkpw-scripts-mod/main/trojan_mod1.sh)
 
 bash <(curl -sL https://raw.githubusercontent.com/luciferkids/hijkpw-scripts/main/wordpress_trojan.sh)
