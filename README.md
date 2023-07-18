@@ -1,9 +1,12 @@
 # trojan
 VPS搭建Trojan
+
 bash <(curl -sL https://raw.githubusercontent.com/daveleung/hijkpw-scripts-mod/main/trojan_mod1.sh)
 
-原文链接：https://v2xtls.org/trojan%E4%B8%80%E9%94%AE%E8%84%9A%E6%9C%AC/
+bash <(curl -sL https://raw.githubusercontent.com/luciferkids/hijkpw-scripts/main/wordpress_trojan.sh)
 
+原文链接：https://v2xtls.org/trojan%E4%B8%80%E9%94%AE%E8%84%9A%E6%9C%AC/
+原文链接：https://v2xtls.org/trojan%e5%bb%ba%e7%ab%99%e6%95%99%e7%a8%8b/
 
 本文转载自：https://v2raytech.com/trojan-one-click-scrip/，如文中内容有错误请到原文查看原始版(最新版)
 
@@ -60,3 +63,39 @@ trojan客户端下载
 下载  trojan客户端，按照其中的配置教程配置客户端。
 
 一切顺利的话，就可以愉快的上外网了！
+
+
+
+trojan建站教程
+本文转载自：https://v2raytech.com/build-website-with-trojan/，如文中内容有错误请到原文查看原始版(最新版)
+
+trojan是基于https协议的工具，而https又是目前网站的主流协议，因此搭建好trojan后顺便整一个网站是完全没问题的，也能让trojan更安全，ip更不容易被墙。 本教程介绍trojan建站的详细过程。
+
+首先，建议网站的主机名用 www 或者 @，即网站是通过 https://www.v2raytech.com 或者 https://v2raytech.com 这样的形式访问。当然blog、app等主机名也是很好的，访问形式就是 https://blog.v2raytech.com、https://app.v2raytech.com。
+
+接着域名解析到vps的ip，运行 trojan一键脚本  搭建好trojan，并确保trojan能在手机、电脑上配置正常使用。
+
+脚本中已经给出了静态网站、小说站、美女站、VPS优惠博客等多种类型选择。如果你想搭建WordPress博客，请参考下文中的教程。
+
+WordPress一键脚本
+WordPress是非常流行的建站程序、CMS系统，国外许多知名网站都是用WordPress搭建，本站也是基于WordPress。
+
+WordPress建站需要配置PHP、MySQL/MariaDB，安装和配置过程比较复杂。本人借鉴 WordPress一键脚本 提供一个适用于CentOS 7/8、Debian/Ubuntu系统的WordPress一键脚本，使用方法如下：
+
+bash <(curl -sL https://raw.githubusercontent.com/luciferkids/hijkpw-scripts/main/wordpress_trojan.sh)
+脚本运行后会询问你是否继续，按回车键继续，接着脚本会自动运行并配置Nginx。运行成功后输出类似如下的配置信息：
+
+WordPress安装成功
+WordPress安装成功
+接下来，浏览器打开域名，进入WordPress的配置界面：
+
+wordpress配置界面
+
+wordpress配置界面
+
+填好必要的信息，点击下方的“安装WordPress”，恭喜你，属于你的博客就搭建好了！接下来尽情折腾博客，开始你的写文章之旅吧！
+
+如果打算认真写博客且长期使用，建议参考：WordPress插件推荐及性能优化建议
+
+其他
+1. 运行wordpress脚本后，trojan也能正常使用，不会受到影响。
